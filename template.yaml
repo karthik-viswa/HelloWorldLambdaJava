@@ -10,5 +10,5 @@ Resources:
       FunctionName: HelloWorldJava
       Runtime: java11
       MemorySize: 512
-      Handler: book.HelloWorld::handler
+      Handler: book.StringIntegerBooleanLambda::handlerBoolean
       CodeUri: target/lambda.jar

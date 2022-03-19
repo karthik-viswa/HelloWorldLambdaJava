@@ -1,7 +1,7 @@
 package book;
 
 public class HelloWorld {
-    public String handler(String s) {
-        return "Hello, " + s + "! How is it going?";
+    public void handler(String s) {
+        System.out.println("Hello, " + s + "! How is it going?");
     }
 }

@@ -10,7 +10,8 @@ Resources:
       FunctionName: HelloWorldJava
       Runtime: java11
       MemorySize: 512
-      Handler: book.HelloWorld::handler
+      Timeout: 2
+      Handler: book.TimeoutLambda::handler
       CodeUri: target/lambda.jar
 
   ContextLambda:

@@ -10,5 +10,14 @@ Resources:
       FunctionName: HelloWorldJava
       Runtime: java11
       MemorySize: 512
-      Handler: book.PojoLambda::handlerPojo
+      Handler: book.HelloWorld::handler
+      CodeUri: target/lambda.jar
+
+  ContextLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: HelloContext
+      Runtime: java11
+      MemorySize: 512
+      Handler: book.ContextLambda::handler
       CodeUri: target/lambda.jar

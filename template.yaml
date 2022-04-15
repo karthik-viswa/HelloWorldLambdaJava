@@ -11,8 +11,11 @@ Resources:
       Runtime: java11
       MemorySize: 512
       Timeout: 2
-      Handler: book.TimeoutLambda::handler
+      Handler: book.EnvVarLambda::handler
       CodeUri: target/lambda.jar
+      Environment:
+        Variables:
+          DATABASE_URL: my-database-url
 
   ContextLambda:
     Type: AWS::Serverless::Function
